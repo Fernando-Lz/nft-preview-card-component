@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* GENERAL STYLES */
+body {
+  height: 100vh;
+  background-color: #0d192b;
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* CARD */
+.container {
+  background-color: #14253d;
+  width: 350px;
+  padding: 25px;
+  border-radius: 10px;
+  z-index: 0;
+}
+
+.img-container {
+  width: 300px;
+  position: relative;
+  cursor: pointer;
+}
+
+.nft-img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 16px;
+  transition: 0.2s ease-in;
+}
+
+.img-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 300px;
+  width: 300px;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  border-radius: 10px;
+  background-color: rgb(0, 255, 247, 0.5);
+  opacity: 0;
+  transition: 0.2s ease-in;
+}
+
+.img-container:hover .img-hover {
+  opacity: 1;
+}
+
+.nft-name {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+.nft-name:hover {
+  color: #00fff7;
+  cursor: pointer;
+}
+
+.nft-description {
+  color: #8bacda;
+  font-weight: 300;
+  margin-bottom: 16px;
+}
+
+.nft-price {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+.price-value {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  color: #00fff7;
+}
+
+.price-value p,
+.time-left p {
+  margin-left: 5px;
+  margin-bottom: 0;
+}
+
+.time-left {
+  display: flex;
+  align-items: center;
+  color: #8bacda;
+}
+
+hr {
+  height: 1px;
+  background-color: #2f415b;
+  border: none;
+  margin-bottom: 12px;
+}
+
+.creator-info {
+  display: flex;
+  align-items: center;
+}
+
+.creator-img {
+  border-radius: 50%;
+  border: 1px solid #fff;
+  margin-right: 16px;
+}
+
+.creator-info p {
+  margin-bottom: 0;
+  color: #8bacda;
+  font-size: 16px;
+}
+
+.creator-name:link,
+.creator-name:visited {
+  text-decoration: none;
+  color: #fff;
+}
+
+.creator-name:hover,
+.creator-name:active {
+  color: #00fff7;
+  cursor: pointer;
+}
