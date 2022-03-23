@@ -11,7 +11,7 @@ Users should be able to:
 
 ### Links
 
-- [Live Site URL](https://fernandolopezl.github.io/nft-preview-card-component/)
+- [Live Site URL](https://fernando-lz.github.io/nft-preview-card-component/)
   
 ### Screenshot
 
